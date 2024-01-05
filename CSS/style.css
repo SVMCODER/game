@@ -1,0 +1,125 @@
+body {
+    background-color:  rgb(0, 98, 255);
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.gamemenu {
+    padding: 10px;
+    background-color: rgb(124, 124, 255);
+    width: fit-content;
+    border: 1px solid rgb(156, 176, 255);
+    font-size: 20px;
+    margin-top: 60%;
+    margin-bottom: 40%;
+}
+button {
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+    padding: 7px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 4px 0px rgba(222, 193, 255, 0.236);
+}
+button:hover {
+    background-color: rgb(126, 21, 224);
+    cursor: pointer;
+    color: rgb(255, 222, 222);
+} 
+h3 {
+    color: rgb(255, 255, 255);
+}
+h4 {
+    color: rgb(0, 0, 0);
+}
+.loading {
+    color: rgb(255, 255, 255);
+    animation: 4s blink linear infinite;
+    font-size: 20px;
+    filter: opacity(1);
+}
+@keyframes blink {
+    0% {
+        filter: opacity(0);
+    }
+    25% {
+        filter: opacity(1);
+    }
+    50% {
+        filter: opacity(0);
+    }
+    75% {
+        filter: opacity(1);
+    }
+    100% {
+        filter: opacity(0);
+    }
+
+}
+.dos{
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+    place-content: center;
+    max-width: 100%;
+    height: fit-content;
+}
+.box {
+    width: 25%;
+    height: 70px;
+    background-color: rgb(251, 171, 0);
+    border-radius: 4px;
+    content: "";
+    margin: 4px;
+    display: grid;
+    margin-bottom: 0px;
+    place-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(235, 235, 235);
+    box-shadow: 0px 2px 4px 0px rgba(15, 15, 15, 0.58);
+}
+.scoreboard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: larger;
+    background-color: rgb(255, 0, 140);
+}
+#score {
+    margin-right: 20px;
+}
+dialog {
+    background-color: rgb(182, 182, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.609);
+    outline: none;
+    border: none;
+}
+.breaker {
+    margin-top: 50px;
+}
+.wrong {
+    animation: 1ms error infinite;
+    transition: 0.2s ease-in-out;
+    background-color: red;
+    transform: 0px;
+}
+@keyframes error {
+    0% {translate:-6px}
+    1%{translate: 6px;}
+    
+} 
+.correct {
+    background-color: rgb(0, 178, 0);
+}
+@keyframes correct {
+    0% {scale: 1;}
+    1%{scale: 0;}
+    
+} 
